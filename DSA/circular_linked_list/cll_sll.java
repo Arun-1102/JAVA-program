@@ -1,6 +1,6 @@
 package DSA.circular_linked_list;
 import java.util.*;
-class cll_sll_minmax{
+class cll_sll{
     Node head;
     class Node{
         int data;
@@ -10,7 +10,7 @@ class cll_sll_minmax{
             next=null;
         }
     }
-    cll_sll_minmax(){
+    cll_sll(){
         head=null;
     }
     void insert(int a){
@@ -25,35 +25,18 @@ class cll_sll_minmax{
            head=nn;
         }
     }
-    void min_max(){
-        int c=head.data;
-        Node temp=head.next;
-        int max=0;
-        while(temp!=head){
-            if(c>temp.data)
-            c=temp.data;
-            temp=temp.next;
-        }
-             while(temp!=head){
-                  if(max<temp.data){
-                  max=temp.data;}
-            temp=temp.next;
-        }     
-             System.out.print("\n Minimum vale of the node : "+c);
-             System.out.print("\n Maximum vale of the node : "+max);
-        }
-        void display(){
+    void display(){
         Node temp=head.next;
         do{
         System.out.print(temp.data+" --> ");
         temp=temp.next;
         }
         while(temp!=head.next);
-        System.out.print("Null\t");
+        System.out.print("Null");
     }
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
-        cll_sll_minmax boj=new cll_sll_minmax();
+        cll_sll boj=new cll_sll();
         while(true){
         int s=scan.nextInt();
         if(s<0)
@@ -62,7 +45,6 @@ class cll_sll_minmax{
         boj.insert(s);
         }
         boj.display();
-       boj.min_max();
     }
 }
 
