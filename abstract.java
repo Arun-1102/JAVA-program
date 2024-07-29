@@ -18,12 +18,14 @@ class keyboard extends computer
     {
         System.out.println("I am typing");
     }
-}
-class abstract 
+
+ abstract 
 {
     public static void main(String[] args)
     {
-        keyboard obj
+        keyboard obj=new keyboard();
+
     }
     
+}
 }

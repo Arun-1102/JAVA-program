@@ -4,7 +4,7 @@ class Book extends Thread{
 			System.out.println("Mango Db");
 			
 			try {
-				Thread.sleep(8000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -19,7 +19,7 @@ class Num extends Thread{
 			System.out.println(i);
 			
 			try {
-				Thread.sleep(8000);
+				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
