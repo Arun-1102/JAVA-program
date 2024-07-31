@@ -28,6 +28,7 @@ public class queue_list {
     }
     void dequeue(){
        front=front.next;
+       
     }
     void display(){
         node temp=front;
@@ -36,6 +37,7 @@ public class queue_list {
             temp=temp.next;
         }
         System.out.print("Null\n");
+        System.out.println("Front = "+front.data);
     }
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
