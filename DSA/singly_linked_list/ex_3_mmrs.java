@@ -1,4 +1,4 @@
-package DSA;
+package DSA.singly_linked_list;
 import java.util.*;
 public class ex_3_mmrs{
     Node head;
