@@ -8,5 +8,4 @@ public class decimal_to_binary {
             System.out.println(i+" = "+Integer.toBinaryString(i));
         }
     }
-    
-}
+    }
