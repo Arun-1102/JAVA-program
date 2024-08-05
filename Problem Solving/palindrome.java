@@ -19,7 +19,8 @@ class palindrome
 String st=str.toString();
         char[] pali = st.toCharArray();
         return pali;
-    }public static void main(String[] args) 
+    }
+    public static void main(String[] args) 
     {
         Scanner sc =new Scanner(System.in);
         String s=sc.nextLine();
@@ -30,6 +31,7 @@ String st=str.toString();
         }
     }
 }
+
 
 
     
