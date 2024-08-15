@@ -24,6 +24,13 @@ public class graph_array {
               System.out.println();
         }
     }
+    void bfs(int v,int s,int[][] arr){
+        System.out.print(v);
+        for(int i=0;i<s;i++){
+            if(arr[v][i]==1)
+                System.out.print(i);
+        }
+    }
     public static void main(String[] args){
         Scanner scan=new Scanner(System.in);
         graph_array ga=new graph_array();
@@ -39,6 +46,7 @@ public class graph_array {
     }
     ga.display(s,arr);
     ga.show(arr,c,s);
+    ga.bfs(3,s,arr);
 } 
 } 
 
